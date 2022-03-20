@@ -7,12 +7,7 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#2F2FA2;
-    background-image: linear-gradient(
-    315deg,
-    #BC3B71 10%,
-    #4d4dcb 70%
-    );
+    ;
 }
 .logo_{
     color:#F64C72;
@@ -159,5 +154,16 @@ span.c {
     margin-left: 12%;
     padding: 10px;
     text-align: left;
-    /*background-color: yellow;*/
+
+}
+
+#cal_logo{
+    max-width: 50%;
+    height: auto;
+    position: absolute;
+    top:    10%;
+    right: 3%;    /*padding-top: 20%;*/
+    -webkit-filter: drop-shadow(15px 15px 0 black)
+    /*drop-shadow(10px 10px 0 black);*/
+    /*filter: drop-shadow(5px 5px 0 black)    drop-shadow(5px 5px 0 black);*/
 }
