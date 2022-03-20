@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Doodle</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doodle Foglalás</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    li a:hover {
-      background-color: #111;
-    }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;594&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="logo2.png">
 
 </head>
+
+<header>
+    <nav>
+        <div class="logo_">
+            <h4><i class="fa fa-calendar"></i>|Doodle</h4>
+        </div>
+        <div class="navbar_links">
+            <ul>
+                <li><a href="mainPage.html">Főoldal</a></li>
+                <li><a href="index.html">Foglalás</a></li>
+                <li><a href="#torles">Foglalás törlése</a></li>
+                <li><a href="#rolunk">Rólunk</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
 <body>
+    <br>
 
-    <ul>
-        <li><a class="active">Fooldal</a></li>
-        <li><a href="#foglalas">Foglalas</a></li>
-        <li><a href="#torles">Foglalas torles</a></li>
-        <li><a href="#rolunk">Rolunk</a></li>
-      </ul>
-
-<br>
-
-  <div>
-    <form action="/action_page.php" target="_blank">
-      <input type="text" placeholder="Nev">
-      <input type="text" placeholder="Email">
-      <select>
-          <option value="Ugyintezes">Ugyintezes</option>
-          <option value="Iratigenyles">Iratigenyles</option>
-          <option value="Fenykepkeszites">Fenykepkeszites</option>
-      </select>
-      <input type="date">
-      <button>Foglalas</button>
-    </form>
-  </div>
+    <div class="inputs">
+        <form action="app.php" target="_blank" method="post">
+            <input id="nev_ter" type="text" name="Nev" placeholder="Név">
+            <br>
+            <input id="email_ter" type="text" name="Email" placeholder="E-mail">
+            <br>
+            <div class="select_bar">
+                <select>
+                <option value="Jogositvany">Jogosítvány igénylése</option>
+                <option value="Szemelyi">Személyi igazolvány igénylése</option>
+                <option value="Utlevel">Útlevél igénylése</option>
+                <option value="Ugyfelkapu">Ügyfélkapú, E-ügyintézés</option>
+                <option value="vezet_hon">Vezetőiengedély honosítása</option>
+                <option value="oltasi">Oltási igazolvány igénylése</option>
+                </select>
+            </div>
+            <input name="Calendar" type="datetime-local" required pattern="\d{4}-\d{2}-\d{2}" placeholder="naptar">
+            <br>
+            <button>Foglalás</button>
+        </form>
+    </div>
 
 </body>
 </html>
-
