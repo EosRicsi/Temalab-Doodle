@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        /* azért nem column csak simán, mert főoldal már használ egyet 50%-os width értékkel */
+        .columnAbout {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: yellow;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+
+    <title>Rólunk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;594&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="logo2.png">
+</head>
+
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <div class="logo_">
+            <h4><i class="fa fa-calendar"></i>|Doodle</h4>
+        </div>
+        <ul>
+            <li><a href="mainPage.html">Főoldal</a></li>
+            <li><a href="index.html">Foglalás</a></li>
+            <li><a href="#torles">Foglalás törlése</a></li>
+            <li><a href="aboutUs.html">Rólunk</a></li>
+        </ul>
+        </div>
+
+    </nav>
+</header>
+<!--NAVBAR VÉGE -->
+
+<body>
+<div class="about-section">
+    <h1 style="text-align: center">Rólunk</h1>
+    <p>We make music, but it is just something else</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="columnAbout">
+        <div class="card">
+            <img src="ye.jpg" alt="Jane" style="width:100%" >
+            <div class="container">
+                <h2 style="text-align: center">Crazy Dude</h2>
+                <p class="title">CEO & Founder</p>
+                <p style="color: white">YOU AIN'T GOT THE ANSWERS</p>
+                <p style="color: white">jane@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columnAbout">
+        <div class="card">
+            <img src="drake.jpg" alt="drake" style="width:100%">
+            <div class="container">
+                <h2 style="text-align: center">Certified Lover Boy</h2>
+                <p class="title">Art Director</p>
+                <p style="color: white">Working on the weekend like usual...</p>
+                <p style="color: white">mike@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columnAbout">
+        <div class="card">
+            <img src="posty.jpg" alt="posty" style="width:100%">
+            <div class="container">
+                <h2 style="text-align: center">Shia Labeouf</h2>
+                <p class="title">Designer</p>
+                <p style="color: white">thats not me... fuck it nice to meet u 2 man...</p>
+                <p style="color: white">john@example.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

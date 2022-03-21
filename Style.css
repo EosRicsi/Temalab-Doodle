@@ -140,11 +140,13 @@ h2{
 }
 h1{
     padding-top: 10px;
-    padding-left: 3%;
+    /*mainPage-nél van beállítva, mert mindenhol behúzta, ahol h1 volt használva*/
+    /*padding-left: 3%;*/
     text-align: left;
 }
 h2{
-    padding-left: 3%;
+    /*mainPage-nél van beállítva, mert mindenhol behúzta, ahol h2 volt használva*/
+    /*padding-left: 3%;*/
     text-align: left;
 }
 .cim{
@@ -157,6 +159,7 @@ h2{
     letter-spacing: 2px;
     float: left;
     margin-bottom: 1%;
+    /*mainPage-nél van beállítva
     /*margin-left: 2%;*/
 }
 .sablon_sz{
@@ -168,6 +171,7 @@ h2{
     clear: both;
     float: left;
     margin-bottom: 10%;
+    /*mainPage-nél van beállítva*/
     /*margin-left: 2%;*/
 }
 .kep{
