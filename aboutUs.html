@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <style>
         body {
@@ -24,22 +23,26 @@
             padding: 0 8px;
         }
 
-        .card {
+        .kartya {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             margin: 10px;
         }
 
         .about-section {
+            font-family: 'Manrope', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
             padding: 50px;
             text-align: center;
             color: white;
         }
 
-        .container {
+        .card_text {
+            font-family: 'Manrope', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
             padding: 0 16px;
         }
 
-        .container::after, .row::after {
+        .card_text::after, .row::after {
             content: "";
             clear: both;
             display: table;
@@ -49,12 +52,56 @@
             color: yellow;
         }
 
-        @media screen and (max-width: 650px) {
-            .column {
+        @media screen and (max-width: 768px) {
+            .columnAbout {
                 width: 100%;
                 display: block;
             }
         }
+        nav{
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .logo_{
+            color:#F64C72;
+            font-family: 'Bebas Neue';
+            /*font-family: 'Source Sans Pro', sans-serif;*/
+            letter-spacing: 2px;
+            font-size: 1.78rem;
+            margin: 0.5rem;
+            align-content: center;
+            alignment: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fa-calendar{
+            display: inline-block;
+            alignment: center;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 1.5rem;
+            font-family: "Bebas Neue";
+            /*font-family: 'Source Sans Pro', sans-serif;*/
+        }
+        li{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+
+
+
     </style>
 
     <title>Rólunk</title>
@@ -66,29 +113,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;594&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!--    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>-->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>-->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>-->
 
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="aboutUsStyle.css.css">
     <link rel="icon" href="logo2.png">
-</head>
 
-<!-- NAVBAR -->
-<header>
-    <nav>
-        <div class="logo_">
-            <h4><i class="fa fa-calendar"></i>|Doodle</h4>
-        </div>
-        <ul>
-            <li><a href="mainPage.html">Főoldal</a></li>
-            <li><a href="index.html">Foglalás</a></li>
-            <li><a href="#torles">Foglalás törlése</a></li>
-            <li><a href="aboutUs.html">Rólunk</a></li>
-        </ul>
-        </div>
 
-    </nav>
-</header>
-<!--NAVBAR VÉGE -->
+
+<!--classokat így kell elnevezni, mert a css stylesheet-ben így van hivatkozva rá-->
+</style>
+    <header>
+        <nav>
+            <div class="logo_">
+                <h4><i class="fa fa-calendar"></i>|Doodle</h4>
+            </div>
+            <div class="navbar_links">
+                <ul>
+                    <li><a href="mainPage.html">Főoldal</a></li>
+                    <li><a href="index.html">Foglalás</a></li>
+                    <li><a href="#torles">Foglalás törlése</a></li>
+                    <li><a href="aboutUs.html">Rólunk</a></li>
+                </ul>
+            </div>
+            <a href="#" class="button_">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+        </nav>
+    </header>
 
 <body>
 <div class="about-section">
@@ -100,36 +158,36 @@
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
     <div class="columnAbout">
-        <div class="card">
+        <div class="kartya">
             <img src="ye.jpg" alt="Jane" style="width:100%" >
-            <div class="container">
+            <div class="card_text">
                 <h2 style="text-align: center">Crazy Dude</h2>
                 <p class="title">CEO & Founder</p>
-                <p style="color: white">YOU AIN'T GOT THE ANSWERS</p>
+                <!--                <p style="color: white">YOU AIN'T GOT THE ANSWERS</p>-->
                 <p style="color: white">jane@example.com</p>
             </div>
         </div>
     </div>
 
     <div class="columnAbout">
-        <div class="card">
+        <div class="kartya">
             <img src="drake.jpg" alt="drake" style="width:100%">
-            <div class="container">
+            <div class="card_text">
                 <h2 style="text-align: center">Certified Lover Boy</h2>
                 <p class="title">Art Director</p>
-                <p style="color: white">Working on the weekend like usual...</p>
+                <!--                <p style="color: white">Working on the weekend like usual...</p>-->
                 <p style="color: white">mike@example.com</p>
             </div>
         </div>
     </div>
 
     <div class="columnAbout">
-        <div class="card">
+        <div class="kartya">
             <img src="posty.jpg" alt="posty" style="width:100%">
-            <div class="container">
+            <div class="card_text">
                 <h2 style="text-align: center">Shia Labeouf</h2>
                 <p class="title">Designer</p>
-                <p style="color: white">thats not me... fuck it nice to meet u 2 man...</p>
+                <!--                <p style="color: white">thats not me... fuck it nice to meet u 2 man...</p>-->
                 <p style="color: white">john@example.com</p>
             </div>
         </div>
